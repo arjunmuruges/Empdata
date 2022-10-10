@@ -1,0 +1,6 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Arjun\EmpData\Api\EmployeeRepositoryInterface" 
+    type="Arjun\EmpData\Model\EmployeeRepository" />
+    <preference for="Arjun\EmpData\Api\Data\EmployeeInterface" 
+    type="Arjun\EmpData\Model\Employee" />
+</config>

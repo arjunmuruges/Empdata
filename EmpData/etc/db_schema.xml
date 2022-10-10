@@ -1,0 +1,13 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="Emp_data">
+        <column xsi:type="int" name="emp_id" padding="10" unsigned="false" nullable="false" identity="true" comment="Emp Id"/>
+        <!-- <column xsi:type="int" name="severity" padding="10" unsigned="true" nullable="false" comment="Severity code"/> -->
+        <column xsi:type="varchar" name="Name" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="varchar" name="Email"  comment="Time of event"/>
+        <column xsi:type="varchar" name="Telephone" nullable="true" comment="Value"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="emp_id"/>
+        </constraint>
+   </table>
+</schema>
